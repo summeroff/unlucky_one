@@ -38,11 +38,11 @@ The story is **complete**, with all chapters included across two parts:
 
 *Note:* Chapter numbering is incomplete in the provided draft; adjust as needed in the final LaTeX source.
 
-The full narrative is compiled into a single LaTeX file, `book_he_was_just_unlucky.tex`.
+The full narrative is compiled into a single LaTeX file, `book_unlucky_one.tex`.
 
 ## Repository Structure
 - **LaTeX Sources**:
-  - `book_he_was_just_unlucky.tex`: The complete story in Russian.
+  - `book_unlucky_one.tex`: The complete story in Russian.
 - **Lore Summary**:
   - `lore_summary.txt`: A detailed overview of the story’s characters, events, and themes.
 - **Release Scripts**:
@@ -66,4 +66,4 @@ SummerOfF
 To compile the LaTeX files into a PDF, ensure you have a LaTeX distribution installed (e.g., TeX Live, MiKTeX, MacTeX). Compile the full book using:
 
 ```bash
-xelatex book_he_was_just_unlucky.tex
+xelatex book_unlucky_one.tex
