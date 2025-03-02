@@ -1,7 +1,14 @@
 \documentclass[12pt,a4paper]{book}
 \usepackage{fontspec}
 \usepackage{polyglossia}
-\setmainfont{Ubuntu}
+\setmainfont[
+  Path = /usr/share/fonts/truetype/ubuntu/,
+  Extension = .ttf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+  BoldItalicFont = *-BoldItalic
+]{Ubuntu}
 \setmainlanguage{russian}
 \setotherlanguage{english}
 
