@@ -1,33 +1,24 @@
-\documentclass[12pt,a4paper]{book}
+\documentclass[12pt,a4paper,oneside]{book} % Switch to oneside for simplicity
 \usepackage{fontspec}
 \usepackage{polyglossia}
 \setmainfont{Noto Serif}
 \setmainlanguage{russian}
 \setotherlanguage{english}
 
-\usepackage{microtype}            % Improves typography (e.g., spacing, kerning)
-
-% Page layout
-\usepackage[a4paper,margin=2.5cm]{geometry} % Consistent margins
-
-% Graphics and images
-\usepackage{graphicx}             % For including images if needed
-
-% Headers and footers
+\usepackage{microtype}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{graphicx}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}                        % Clear default headers/footers
-\lhead{\nouppercase{\leftmark}}   % Chapter title in header (no uppercase)
-\rhead{\thepage}                  % Page number on right
+\fancyhf{}
+\lhead{\nouppercase{\leftmark}}
+\rhead{\thepage}
+\usepackage[hidelinks]{hyperref}
 
-% Hyperlinks and clickable references
-\usepackage[hidelinks]{hyperref}  % Hyperlinks without visible boxes
-
-\setlength{\headheight}{14.5pt} % Fix fancyhdr warning
-\pagestyle{fancy}
+\setlength{\headheight}{14.5pt}
 
 % Custom environments
-\newenvironment{dialogue}{\begin{quote}\itshape}{\end{quote}} % Dialogue formatting
+\newenvironment{dialogue}{\begin{quote}\itshape}{\end{quote}}
 
 % Document metadata
 \title{Ему просто не повезло}
@@ -37,10 +28,11 @@
 \begin{document}
 
 \maketitle
+\clearpage % Force next page without blank
 \tableofcontents
+\clearpage
 
 \part{Часть первая}
-
 \chapter{Начало неудач}
 
 Ему просто не повезло.
