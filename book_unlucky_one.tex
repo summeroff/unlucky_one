@@ -1,19 +1,17 @@
 \documentclass[12pt,a4paper]{book}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainfont{Ubuntu}
+\setmainlanguage{russian}
+\setotherlanguage{english}
 
-% Encoding and language support
-\usepackage[utf8]{inputenc}       % UTF-8 input encoding
-\usepackage[T2A]{fontenc}         % Font encoding for Cyrillic
-\usepackage[russian]{babel}       % Russian language support
-
-% Fonts and typography
-\usepackage{lmodern}              % Latin Modern fonts (scalable, good default)
 \usepackage{microtype}            % Improves typography (e.g., spacing, kerning)
 
 % Page layout
 \usepackage[a4paper,margin=2.5cm]{geometry} % Consistent margins
 
-% Graphics and images (optional, in case you add illustrations later)
-\usepackage{graphicx}
+% Graphics and images
+\usepackage{graphicx}             % For including images if needed
 
 % Headers and footers
 \usepackage{fancyhdr}
@@ -25,8 +23,10 @@
 % Hyperlinks and clickable references
 \usepackage[hidelinks]{hyperref}  % Hyperlinks without visible boxes
 
-% Custom dialogue environment
-\newenvironment{dialogue}{\begin{quote}\itshape}{\end{quote}}
+\usepackage[provide*=english, russian]{babel}
+
+% Custom environments
+\newenvironment{dialogue}{\begin{quote}\itshape}{\end{quote}} % Dialogue formatting
 
 % Document metadata
 \title{Ему просто не повезло}
