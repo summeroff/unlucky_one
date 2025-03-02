@@ -26,7 +26,7 @@ jobs:
       - name: Install fonts-ubuntu
         run: |
           sudo apt-get update
-          sudo apt-get install -y fonts-ubuntu fonts-ubuntu-font-family-console
+          sudo apt-get install -y fonts-noto-core fonts-dejavu texlive-lang-cyrillic
           sudo fc-cache -f -v
 
       - name: Compile LaTeX to PDF with XeLaTeX

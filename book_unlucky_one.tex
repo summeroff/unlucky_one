@@ -1,14 +1,7 @@
 \documentclass[12pt,a4paper]{book}
 \usepackage{fontspec}
 \usepackage{polyglossia}
-\setmainfont[
-  Path = /usr/share/fonts/truetype/ubuntu/,
-  Extension = .ttf,
-  UprightFont = *-Regular,
-  BoldFont = *-Bold,
-  ItalicFont = *-Italic,
-  BoldItalicFont = *-BoldItalic
-]{Ubuntu}
+\setmainfont{Noto Serif}
 \setmainlanguage{russian}
 \setotherlanguage{english}
 
@@ -30,9 +23,11 @@
 % Hyperlinks and clickable references
 \usepackage[hidelinks]{hyperref}  % Hyperlinks without visible boxes
 
+\setlength{\headheight}{14.5pt} % Fix fancyhdr warning
+\pagestyle{fancy}
+
 % Custom environments
 \newenvironment{dialogue}{\begin{quote}\itshape}{\end{quote}} % Dialogue formatting
-
 
 % Document metadata
 \title{Ему просто не повезло}
