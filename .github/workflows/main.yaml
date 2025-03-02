@@ -16,7 +16,7 @@ jobs:
         uses: teatimeguest/setup-texlive-action@v3
         with:
           packages: >-
-            latexmk xetex fontenc inputenc babel lmodern graphicx geometry hyperref fancyhdr setspace cm-super babel-russian
+            latexmk xetex fontenc inputenc babel lmodern graphicx geometry hyperref fancyhdr setspace cm-super microtype babel-russian
 
       - name: Install Pandoc
         uses: pandoc/actions/setup@v1
