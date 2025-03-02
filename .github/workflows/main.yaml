@@ -16,7 +16,7 @@ jobs:
         uses: teatimeguest/setup-texlive-action@v3
         with:
           packages: >-
-            latexmk xetex fontspec polyglossia xunicode geometry hyperref fancyhdr microtype hyphen-russian setspace graphics oberdiek tools xdvipdfmx
+            latexmk xetex fontspec polyglossia xunicode geometry hyperref fancyhdr microtype hyphen-russian setspace graphics oberdiek tools xdvipdfmx  epigraph nextpage
 
       - name: Install Pandoc
         uses: pandoc/actions/setup@v1
